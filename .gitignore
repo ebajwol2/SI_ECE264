@@ -1,0 +1,26 @@
+# Compiled object files
+*.o
+
+# Executables
+*.exe
+
+# Editor and OS files
+*.swp
+*~
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Build directories
+build/
+
+# Backup files
+*.bak
+
+# Ctags
+tags
+
+# Others
+*.out
