@@ -4,9 +4,10 @@
 double compute_average(int *arr, int n) {
     int sum = 0;
     int i;
-    for (i = 0; i <= n; i++) {  
-        sum += arr[i];           
-    }
+    while (i <= n) {                 
+        sum += arr[i];
+        i++;
+    }                        
     return sum / n;              
 }
 
