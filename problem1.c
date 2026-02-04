@@ -3,7 +3,7 @@
 
 double compute_average(int *arr, int n) {
     int sum = 0;
-    int i;
+    int i = 0;
     while (i <= n) {                 
         sum += arr[i];
         i++;

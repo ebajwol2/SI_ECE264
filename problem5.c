@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 int main(void) {
-    int arr[] = {1, 3, 3, 4, 5, 5, 7};  // Has duplicates: 3,5
+    int arr[] = {1, 3, 3, 4, 5, 5, 7};
     int n = 7;
-    int count = 0;                       // BUG #1: Uninitialized? No - this is good!
+    int count = 0;                      
     
     printf("Duplicates found: ");
-    for (int i = 0; i <= n; i++) {       // BUG #2: Off-by-one (but you know this!)
-        for (int j = i+1; j < n; j++) {  // BUG #3: WRONG nested loop bounds!
+    for (int i = 0; i <= n; i++) {       
+        for (int j = i+1; j < n; j++) {  
             if (arr[i] == arr[j]) {
                 printf("%d ", arr[i]);
                 count++;
